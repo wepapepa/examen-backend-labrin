@@ -4,8 +4,8 @@ import morgan from 'morgan';
 //import { Server } from "socket.io";
 //import viewsRouter from './routes/views.routes.js'
 import ProductsManager from "./managers/products.manager.js";
-import cartRouter from "./routes/carts.routes.js";
-import productsRouter from "./routes/products.routes.js";
+import cartRouter from "./routes/carts.router.js";
+import productRouter from "./routes/product.router.js";
 import userRouter from './routes/users.router.js';
 import { errorHandler } from './middlewares/errorHandler.js';
 import { initMongoDB } from './db/database.js';
@@ -22,7 +22,7 @@ app.use(morgan('dev'));
 
 app.use('/users', userRouter);
 app.use('/carts', cartRouter);
-app.use('/products', productsRouter);
+app.use('/products', productRouter);
 
 app.use(errorHandler);
 
