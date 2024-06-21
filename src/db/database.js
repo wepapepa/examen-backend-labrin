@@ -1,6 +1,6 @@
-import mongoose, { connection } from "mongoose";
+import mongoose from "mongoose";
 
-const connectionString = '';
+const connectionString = 'mongodb+srv://admin:admin101012@examen-backend.fkuvtyw.mongodb.net/dbexamen?retryWrites=true&w=majority&appName=Examen-backend';
 
 export const initMongoDB = async() => {
     try{
@@ -10,3 +10,5 @@ export const initMongoDB = async() => {
         console.log(`ERROR => ${error}`);
     }
 }
+
+//initMongoDB()
