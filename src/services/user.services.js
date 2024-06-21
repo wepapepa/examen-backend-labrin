@@ -40,5 +40,16 @@ export const updateUser = async (id, obj) => {
             const userUpdated = await userDao.update(id, obj);
             return userUpdated;
         }
+    } catch (error) {
+        console.log(error);
     }
-}
+};
+
+export const deleteUser = async (id) => {
+    try {
+        const userDeleted = await userDao.delete(id);
+        return userDeleted;
+    } catch (error) {
+        console.log(error);
+    }
+};
