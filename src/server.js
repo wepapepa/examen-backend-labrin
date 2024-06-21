@@ -3,7 +3,6 @@ import morgan from 'morgan';
 //import handlebars from 'express-handlebars';
 //import { Server } from "socket.io";
 //import viewsRouter from './routes/views.routes.js'
-import ProductsManager from "./managers/products.manager.js";
 import cartRouter from "./routes/carts.router.js";
 import productRouter from "./routes/product.router.js";
 import userRouter from './routes/users.router.js';
