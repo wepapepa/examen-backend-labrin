@@ -46,7 +46,7 @@ export default class CartDaoMongoDB {
         try {
             return await CartModel.findOne({
                 _id: cartId,
-                products: { $elemMatch: {productt: prodId }}
+                products: { $elemMatch: {product: prodId }}
 
             });
         } catch (error) {
